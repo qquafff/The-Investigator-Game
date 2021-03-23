@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class uvLightScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+        RaycastHit hit;
+        Ray uvRay = new Ray(Vector3 origin, Vector3 direction);
+        Physics.Raycast(UVRay, RaycastHit hitInfo, float distance, int LayerMask);
     }
 }
