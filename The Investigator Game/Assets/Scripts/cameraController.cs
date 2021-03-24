@@ -12,6 +12,7 @@ public class cameraController : MonoBehaviour
     public float maxAngle = 45.0f;
     public float RotationSensitivity = 35.0f;
 
+
     float yRotate = 0.0f;
 
     GameObject character;

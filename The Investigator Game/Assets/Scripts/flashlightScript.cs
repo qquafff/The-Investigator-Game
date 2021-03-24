@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class flashlightScript : MonoBehaviour
 {
-
+    public GameObject go1;
     public bool FlashOn = false;
     public GameObject lightSource;
     public bool failSafe = false;
@@ -20,6 +20,7 @@ public class flashlightScript : MonoBehaviour
                 failSafe = true;
                 lightSource.SetActive(true);
                 FlashOn = true;
+                go1.SetActive(true);
                 StartCoroutine(FailSafe());
             }
             if (FlashOn == true && failSafe == false)
@@ -27,6 +28,7 @@ public class flashlightScript : MonoBehaviour
                 failSafe = true;
                 lightSource.SetActive(false);
                 FlashOn = false;
+                go1.SetActive(false);
                 StartCoroutine(FailSafe());
             }
         }
