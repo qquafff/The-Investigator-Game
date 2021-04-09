@@ -18,11 +18,13 @@ public class buttonScripts : MonoBehaviour
         
     }
 
+    //Loads assigned scene
     public void LoadScene()
     {
         SceneManager.LoadSceneAsync(level);
     }
 
+    //Quits the game
     public void Quit()
     {
         Application.Quit();

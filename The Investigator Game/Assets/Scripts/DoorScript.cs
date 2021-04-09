@@ -22,6 +22,8 @@ public class DoorScript : MonoBehaviour
 
 
     // Update is called once per frame
+
+    //Checks the doors current state and opens/closes the doors
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && timeleft == 0.0f)
@@ -31,6 +33,7 @@ public class DoorScript : MonoBehaviour
             OpenAndCloseDoor();
     }
 
+    //Checks if the door is already open
     public void CheckDoor()
     {
         if(Physics.Raycast(cam.position, cam.forward, out hit, 5, mask))
@@ -43,7 +46,8 @@ public class DoorScript : MonoBehaviour
             currentdoor = hit.transform;
         }
     }
-
+    
+    //Open/Close function
     public void OpenAndCloseDoor()
     {
         timeleft += Time.deltaTime;

@@ -7,12 +7,16 @@ public class characterController : MonoBehaviour
 
     public float speed = 10.0f;
     // Start is called before the first frame update
+
+        //Locks the cursor so the camera can be operated without cursor being visible
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
+    
+        //Movement 
     void Update()
     {
         float translation = Input.GetAxis("Vertical") * speed;
