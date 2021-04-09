@@ -15,7 +15,7 @@ public class Item : MonoBehaviour
 
     public GameObject DeactiveItem4;
 
-
+    //Equips the selected item
     public void onClick()
     {
         ItemToEquip.SetActive(true);

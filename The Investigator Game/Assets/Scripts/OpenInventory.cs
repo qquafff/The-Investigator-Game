@@ -14,6 +14,7 @@ public class OpenInventory : MonoBehaviour
 
     private void Update()
     {
+        //Opens/Closes the inventory
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (InventoryOpen)
@@ -26,6 +27,7 @@ public class OpenInventory : MonoBehaviour
      
         }
     }
+    //Open/Close functions
     public void Close()
     {
         InventoryUI.SetActive(false);

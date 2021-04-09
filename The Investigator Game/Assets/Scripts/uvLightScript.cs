@@ -5,7 +5,7 @@ using UnityEngine;
 public class uvLightScript : MonoBehaviour
 {
 
-    public GameObject go1;
+    
     public GameObject go2;
     public GameObject go3;
     public GameObject go4;
@@ -34,14 +34,14 @@ public class uvLightScript : MonoBehaviour
     void Update()
     {
         
-        if(flashLight.FlashOn == true)
+        /*if(flashLight.FlashOn == true)
         {
             go1.SetActive(true);
         }
         else if (flashLight.FlashOn == false)
         {
             go1.SetActive(false);
-        }
+        }*/
 
     }
 

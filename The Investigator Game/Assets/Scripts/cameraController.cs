@@ -23,6 +23,8 @@ public class cameraController : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //Camera rotation
     void Update()
     {
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
