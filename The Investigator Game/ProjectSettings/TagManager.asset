@@ -8,6 +8,7 @@ TagManager:
   - FingerPrint
   - UVlight
   - SeenbyCamera
+  - music
   layers:
   - Default
   - TransparentFX

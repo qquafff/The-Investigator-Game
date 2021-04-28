@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
-
+    public Rigidbody rb;
     public float speed = 10.0f;
     // Start is called before the first frame update
 
@@ -12,12 +12,13 @@ public class characterController : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     
         //Movement 
-    void Update()
+    void FixedUpdate()
     {
         float translation = Input.GetAxis("Vertical") * speed;
         float strafe = Input.GetAxis("Horizontal") * speed;
