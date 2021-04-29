@@ -10,7 +10,7 @@ public class AddForce : MonoBehaviour
     public float x;
     public float y;
     public float z;
-    Vector3 myVector;
+    public Vector3 myVector;
 
     void Start()
     {
